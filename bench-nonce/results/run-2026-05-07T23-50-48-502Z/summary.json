@@ -1,0 +1,45 @@
+{
+  "config": {
+    "tag": "SBI/leaf",
+    "fieldName": "evidence_tier",
+    "fieldValues": [
+      "tier1",
+      "tier2",
+      "tier3"
+    ],
+    "budgetSeconds": 60,
+    "exhaustive": false
+  },
+  "throughput": {
+    "nodeMedianHps": 1475299.4304606551,
+    "opensslHps": 1547101.71875,
+    "projectionRate": 1547101.71875
+  },
+  "results": {
+    "0byte": {
+      "candidates": 3,
+      "timeSeconds": 0.0000014529004400049962,
+      "status": "Broken",
+      "method": "exhaustive"
+    },
+    "4byte": {
+      "candidates": 12884901888,
+      "timeSeconds": 9262.690944843653,
+      "status": "Broken",
+      "method": "sampled",
+      "sampleHps": 1391053.8486845181
+    },
+    "8byte": {
+      "candidates": 55340232221128655000,
+      "timeSeconds": 35770260966319.32,
+      "status": "Secure",
+      "method": "analytical"
+    },
+    "16byte": {
+      "candidates": 1.0208471007628154e+39,
+      "timeSeconds": 6.59844849495495e+32,
+      "status": "Secure",
+      "method": "analytical"
+    }
+  }
+}

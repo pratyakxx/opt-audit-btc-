@@ -1,0 +1,22 @@
+Node crypto throughput: 1.48 × 10^6 H/s
+OpenSSL throughput: 1.55 × 10^6 H/s
+Projection rate: 1.55 × 10^6 H/s
+
+0 B: 3 candidates, 1.453 µs, Broken
+4 B: 1.29 × 10^10 candidates, 2.6 hr, Broken
+8 B: 5.53 × 10^19 candidates, 10^6.1 yr, Secure
+16 B: 1.02 × 10^39 candidates, 10^25.3 yr, Secure
+
+\begin{tabular}{lrrl}
+\toprule
+Nonce size & Candidates & Time & Status \\
+\midrule
+0 bytes  & 3                                      & $<$0.001\,ms      & Broken \\
+4 bytes  & $3 \times 2^{32} \approx 1.3\times10^{10}$ & $\sim$154\,min\textsuperscript{*}    & Broken \\
+8 bytes  & $3 \times 2^{64} \approx 5.5\times10^{19}$ & $\sim$1133491\,yr\textsuperscript{\dag} & Secure \\
+16 bytes & $3 \times 2^{128} \approx 10^{39}$        & $\sim$10\textsuperscript{25}\,yr\textsuperscript{\dag} & Secure \\
+\bottomrule
+\end{tabular}
+\\[0.5em]
+\textsuperscript{*}\,Projected from a 60-second sampled run.
+\textsuperscript{\dag}\,Projected analytically from measured throughput of 1.55 × 10^6\,H/s.
