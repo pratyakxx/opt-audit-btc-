@@ -1,0 +1,39 @@
+Encoding: compact binary (TLV)
+
+N=5, K=1: mean=421 min=421 max=421
+N=5, K=2: mean=549 min=549 max=549
+N=5, K=3: mean=683 min=683 max=683
+N=5, K=5: mean=1026 min=1024 max=1026
+N=10, K=1: mean=453 min=453 max=453
+N=10, K=2: mean=613 min=613 max=613
+N=10, K=3: mean=779 min=779 max=779
+N=10, K=5: mean=1186 min=1185 max=1186
+N=10, K=10: mean=2082 min=2080 max=2082
+
+N=10 fit: slope=182.9, intercept=254.4, R²=0.9993
+N=5 fit: slope=152.1, intercept=251.5, R²=0.9943
+
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    xlabel={Revealed fields ($K$)},
+    ylabel={Bundle size (bytes)},
+    symbolic x coords={1, 2, 3, 5, 10},
+    xtick=data,
+    ymin=0, ymax=2500,
+    bar width=8pt,
+    legend pos=north west,
+    enlarge x limits=0.15,
+    width=0.7\textwidth,
+    height=0.4\textwidth,
+]
+\addplot[fill=blue!50] coordinates {
+    (1, 453) (2, 613) (3, 779) (5, 1186) (10, 2082)
+};
+\addlegendentry{$N = 10$}
+\addplot[fill=green!50] coordinates {
+    (1, 421) (2, 549) (3, 683) (5, 1026)
+};
+\addlegendentry{$N = 5$}
+\end{axis}
+\end{tikzpicture}
