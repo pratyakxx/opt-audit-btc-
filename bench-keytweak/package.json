@@ -1,0 +1,21 @@
+{
+  "name": "bench-keytweak",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "volta": {
+    "node": "20.20.2"
+  },
+  "scripts": {
+    "bench": "tsx src/bench.ts"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.3.3",
+    "@noble/secp256k1": "2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
