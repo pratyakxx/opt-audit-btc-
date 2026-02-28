@@ -1,0 +1,12 @@
+Normal P2TR key gen:    mean=195.2 µs   median=185.5 µs   p95=236.3 µs
+Tweaked key gen (SBI):  mean=398.6 µs   median=377.7 µs   p95=472.1 µs
+Overhead (mean):        +203.4 µs (+104.2%)
+
+\begin{tabular}{lcccc}
+\toprule
+Operation & Mean & Median & p95 & Overhead \\
+\midrule
+Normal P2TR key gen     & 195.2\,$\mu$s & 185.5\,$\mu$s & 236.3\,$\mu$s & --- \\
+Tweaked key gen (SBI)   & 398.6\,$\mu$s & 377.7\,$\mu$s & 472.1\,$\mu$s & 104.2\% \\
+\bottomrule
+\end{tabular}
