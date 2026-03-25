@@ -1,0 +1,28 @@
+Config: 100 iterations, 3 runs, 50 warm-up, N=10, K=3
+
+SBI encoding: mean=12.9 µs, p95=20.1 µs, share=0.1%
+Merkle tree construction: mean=74.3 µs, p95=91.0 µs, share=0.5%
+Key tweak computation: mean=792.6 µs, p95=894.8 µs, share=5.8%
+Transaction construction + sign: mean=4600.0 µs, p95=4955.6 µs, share=33.4%
+Intent message + sign: mean=2008.8 µs, p95=2250.2 µs, share=14.6%
+Bundle generation (K=3): mean=1877.5 µs, p95=2096.7 µs, share=13.6%
+Auditor verification (6 steps): mean=4400.7 µs, p95=4787.4 µs, share=32.0%
+Total: mean=13766.9 µs, p95=14641.9 µs
+
+SBI-specific share: 51.9%
+
+\begin{tabular}{lrrr}
+\toprule
+Phase & Mean ($\mu$s) & p95 ($\mu$s) & Share \\
+\midrule
+SBI encoding                    & 12.9  & 20.1  & 0.1\% \\
+Merkle tree construction        & 74.3  & 91.0  & 0.5\% \\
+Key tweak computation           & 792.6  & 894.8  & 5.8\% \\
+Transaction construction + sign & 4600.0  & 4955.6  & 33.4\% \\
+Intent message + sign           & 2008.8  & 2250.2  & 14.6\% \\
+Bundle generation ($K = 3$)     & 1877.5  & 2096.7  & 13.6\% \\
+Auditor verification (6 steps)  & 4400.7  & 4787.4  & 32.0\% \\
+\midrule
+\textbf{Total}                  & \textbf{13766.9} & \textbf{14641.9} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
