@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TM1",
+    "label": "Post-hoc invoice fabrication",
+    "expected": 4,
+    "observed": 4,
+    "status": "PASS",
+    "reason": "output key mismatch (tweak recompute)"
+  },
+  {
+    "id": "TM2",
+    "label": "Field value manipulation (amount)",
+    "expected": 3,
+    "observed": 3,
+    "status": "PASS",
+    "reason": "Merkle proof failed for field \"amount\""
+  },
+  {
+    "id": "TM3",
+    "label": "Field manipulation + recomputed proof",
+    "expected": 4,
+    "observed": 4,
+    "status": "PASS",
+    "reason": "output key mismatch (tweak recompute)"
+  },
+  {
+    "id": "TM4",
+    "label": "Signature replay (wrong txid)",
+    "expected": 6,
+    "observed": 6,
+    "status": "PASS",
+    "reason": "intent message does not bind to claimed txid"
+  },
+  {
+    "id": "TM5",
+    "label": "Forged merchant signature",
+    "expected": 5,
+    "observed": 5,
+    "status": "PASS",
+    "reason": "merchant signature invalid"
+  },
+  {
+    "id": "TM6",
+    "label": "Wrong internal key",
+    "expected": 4,
+    "observed": 4,
+    "status": "PASS",
+    "reason": "output key mismatch (tweak recompute)"
+  },
+  {
+    "id": "TM7",
+    "label": "Swapped blinding nonce",
+    "expected": 3,
+    "observed": 3,
+    "status": "PASS",
+    "reason": "Merkle proof failed for field \"amount\""
+  }
+]

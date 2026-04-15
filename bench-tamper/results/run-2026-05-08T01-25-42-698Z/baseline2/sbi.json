@@ -1,0 +1,54 @@
+{
+  "fields": [
+    {
+      "name": "amount",
+      "value": "0000000001db78ec",
+      "nonce": "e0d2fe8f96515e9e840dfb411b8648db"
+    },
+    {
+      "name": "currency",
+      "value": "425443",
+      "nonce": "5b5bf4da83d5953dd241a319f3f7e3b7"
+    },
+    {
+      "name": "merchant_did",
+      "value": "6469643a6b65793a7a364d6b3630643862623634636562623364623262376430653665343631616462313130",
+      "nonce": "7191b52b4d3c4989b6c4b9516fa4a220"
+    },
+    {
+      "name": "recipient_addr",
+      "value": "f5499a786d2bea9aaa050fbae4a5403ccb42ba09",
+      "nonce": "e17a53f3b4bc45f82a49aafd99817264"
+    },
+    {
+      "name": "timestamp",
+      "value": "0000000069fd3b96",
+      "nonce": "1594d133724e03e622ed9789a84320ad"
+    },
+    {
+      "name": "evidence_tier",
+      "value": "5354414e44415244",
+      "nonce": "64551644d1d51b5e9457f319ede96606"
+    },
+    {
+      "name": "memo",
+      "value": "5061796d656e7420666f7220696e766f69636520233633303131",
+      "nonce": "17fce553e8a11cccf30a6736f7d9bf3f"
+    },
+    {
+      "name": "expiry",
+      "value": "0000000069fd49a6",
+      "nonce": "afdc418ca37c88838f7204d554f257f5"
+    },
+    {
+      "name": "network",
+      "value": "72656774657374",
+      "nonce": "0ad4a896685151df209e6c8269c18a66"
+    },
+    {
+      "name": "version",
+      "value": "01",
+      "nonce": "53847dfe0f2c1f8f578af7b4aa7437ae"
+    }
+  ]
+}

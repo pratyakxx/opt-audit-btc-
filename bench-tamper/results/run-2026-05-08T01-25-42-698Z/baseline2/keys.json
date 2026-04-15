@@ -1,0 +1,10 @@
+{
+  "merchantPriv": "5cf539bec0b6d116cdc6936d996a2a0bf3568b63cc936078283ab81d87cbbce3",
+  "merchantPub": "bd61b29472cce455ca98de1dc9dac26b9825acf570110f2fd6d440834c9fb666",
+  "internalPriv": "6ca20532b341ee886dafab2b5d6c18bb23d012f4801d62a6eb4d84b94bd4c9f5",
+  "internalPub": "1a085ad6612ca00302e8f5fd6b471502c311705ee99aa24097bdcb93b98a1f46",
+  "outputPub": "f6e38aa02d55ec1ab136b3e97e8eaaaf84e0db5530f235f2a9fe1db226939614",
+  "tweakedPriv": "d6ae333eac5c8113a220ad1949dd4ebc48830e3899015006e3805bf61f730f85",
+  "payerPriv": "698e79c12cb81bdb84461f7b0f36543df5f29d87118b6fc86c1fbb0ea20a9f72",
+  "payerPub": "7e5ad6afbb6ffc7eda4fa636265fc2c78b40e4c28132f6bea7f9a58ffd61c997"
+}

@@ -1,0 +1,60 @@
+=== Tamper Detection Suite (Table 6.1) ===
+
+--- Phase A: Baseline Construction ---
+Baseline 1: txid=3528827c3cca7484...
+  Confirmed at height 101
+Baseline 1 verification: ACCEPT
+Baseline 2: txid=177ecaddde4a231f...  [for TM4]
+  Confirmed at height 102
+Baseline 2 verification: ACCEPT
+
+--- Setup Confirmation ---
+Simulated chain: blocks=102
+Baseline 1: txid=3528827c3cca74843edacf8e1803667e8beedb08f51fb799bb6f88754a0cbf55
+Baseline 2: txid=177ecaddde4a231f814661b357e1a457d33a13d6e29869b3da71753bb1aef3d7
+Baseline verification: ACCEPT (no false positive)
+
+--- Phase B: Tamper Attacks ---
+
+TM1 Post-hoc invoice fabrication           Expected: Step 4   Observed: Step 4   PASS
+TM2 Field value manipulation (amount)      Expected: Step 3   Observed: Step 3   PASS
+TM3 Field manipulation + recomputed proof  Expected: Step 4   Observed: Step 4   PASS
+TM4 Signature replay (wrong txid)          Expected: Step 6   Observed: Step 6   PASS
+TM5 Forged merchant signature              Expected: Step 5   Observed: Step 5   PASS
+TM6 Wrong internal key                     Expected: Step 4   Observed: Step 4   PASS
+TM7 Swapped blinding nonce                 Expected: Step 3   Observed: Step 3   PASS
+
+Summary: 7 attacks, 7 detected, 0 false negatives.
+Step-ordering matches: 7 / 7
+
+--- LaTeX Table 6.1 ---
+
+\begin{tabular}{llll}
+\toprule
+ID  & Attack & Expected fail & Result \\
+\midrule
+TM1 & Post-hoc invoice fabrication & Step 4 & \checkmark FAIL Step 4 \\
+TM2 & Field value manipulation (amount) & Step 3 & \checkmark FAIL Step 3 \\
+TM3 & Field manipulation + recomputed proof & Step 4 & \checkmark FAIL Step 4 \\
+TM4 & Signature replay (wrong txid) & Step 6 & \checkmark FAIL Step 6 \\
+TM5 & Forged merchant signature & Step 5 & \checkmark FAIL Step 5 \\
+TM6 & Wrong internal key & Step 4 & \checkmark FAIL Step 4 \\
+TM7 & Swapped blinding nonce & Step 3 & \checkmark FAIL Step 3 \\
+\bottomrule
+\end{tabular}
+
+--- Suggested Prose Update ---
+
+Current assertion is accurate: "All seven attacks were detected by the expected
+verification step, with no false negatives."
+
+Append: "The unmutated baseline bundle was verified once and ACCEPTed, confirming
+no false positive on a well-formed bundle."
+
+--- Reproducibility ---
+
+Simulated block height before run: 100
+Simulated block height after run:  102 (2 blocks mined)
+Baseline txid 1: 3528827c3cca74843edacf8e1803667e8beedb08f51fb799bb6f88754a0cbf55
+Baseline txid 2: 177ecaddde4a231f814661b357e1a457d33a13d6e29869b3da71753bb1aef3d7
+Run duration: 0.1 seconds

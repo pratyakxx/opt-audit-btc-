@@ -1,0 +1,52 @@
+{
+  "txid": "177ecaddde4a231f814661b357e1a457d33a13d6e29869b3da71753bb1aef3d7",
+  "recipientScript": "5120a76075543feb36fff19034932084f3fbf3ee893737c2b6c0bfd3ffcb7ac370b2",
+  "disclosedIndices": [
+    0,
+    1,
+    2
+  ],
+  "disclosedFields": [
+    {
+      "name": "amount",
+      "value": "0000000001db78ec",
+      "nonce": "e0d2fe8f96515e9e840dfb411b8648db",
+      "proof": [
+        "002890f821838d0d84d7e42a6f5cadc877d6a70475501e275d0d1a6b26224b749c",
+        "00584e4955879a8e6b0dd2c7dfa3fc0a35b61d8da665c46afe6ff546cdfa39ac63",
+        "0094e78f452b227e6e64c3cc5f7c9162fe4985aa46f3b12eb8ea219de23d15a5c6",
+        "003fabdb813c2d510fffea78cc9febe0f7a277d181bc81959a931ed732182660dd"
+      ]
+    },
+    {
+      "name": "currency",
+      "value": "425443",
+      "nonce": "5b5bf4da83d5953dd241a319f3f7e3b7",
+      "proof": [
+        "01077d7be82b2ad313cabfb70ccf26dde5c389324e62c3792e574a363024101f0a",
+        "00584e4955879a8e6b0dd2c7dfa3fc0a35b61d8da665c46afe6ff546cdfa39ac63",
+        "0094e78f452b227e6e64c3cc5f7c9162fe4985aa46f3b12eb8ea219de23d15a5c6",
+        "003fabdb813c2d510fffea78cc9febe0f7a277d181bc81959a931ed732182660dd"
+      ]
+    },
+    {
+      "name": "merchant_did",
+      "value": "6469643a6b65793a7a364d6b3630643862623634636562623364623262376430653665343631616462313130",
+      "nonce": "7191b52b4d3c4989b6c4b9516fa4a220",
+      "proof": [
+        "00c935ab47c8aec2df5a5df44b7fe425ce474067290bb9b5a9f576b6d1574146ac",
+        "01f6288206f46ddceef1e8a3f9eddf309718318f24b48ea6174719d0e9d760b6c5",
+        "0094e78f452b227e6e64c3cc5f7c9162fe4985aa46f3b12eb8ea219de23d15a5c6",
+        "003fabdb813c2d510fffea78cc9febe0f7a277d181bc81959a931ed732182660dd"
+      ]
+    }
+  ],
+  "merkleRoot": "7c8d7ad95789edf497948891e0b8d47c7fcdc6c9e6afc5807299020d62276913",
+  "internalPub": "1a085ad6612ca00302e8f5fd6b471502c311705ee99aa24097bdcb93b98a1f46",
+  "outputPub": "f6e38aa02d55ec1ab136b3e97e8eaaaf84e0db5530f235f2a9fe1db226939614",
+  "merchantSignature": "35693c46e6d666db0126f77d508bbd3e0fe421516aee5ef4fb3f11d5e2cc18d6aa108e3f390f53c00aef7574741bc342474356fb8dfe5e48d105071983cfde6f",
+  "merchantPub": "bd61b29472cce455ca98de1dc9dac26b9825acf570110f2fd6d440834c9fb666",
+  "intentSignature": "a2f98a13a50ccbe495558a59d79ce2612cd0f853154d3e491826fa992920807592fe0aa0d2d25cdb45ed4fef0d02b798fc76a359dda1b6c6eadf7b6025cf39db",
+  "intentMessage": "d0a3cf43a3861bed1deb20f4a2c60724366b97ffbcb217082ee0e42b0d628617",
+  "payerPub": "7e5ad6afbb6ffc7eda4fa636265fc2c78b40e4c28132f6bea7f9a58ffd61c997"
+}
